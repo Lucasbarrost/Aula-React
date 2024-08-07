@@ -23,12 +23,12 @@ function App() {
     }
   
   return (
-    <div>
+    <div class="menu">
       <h1>Gerador de senhas</h1>
       <button onClick={generate}>Gerar!</button>
       <button onClick={copyToClipboard}>{copyText}</button>
-      <div>{password}</div>
-      
+      <div class="senha">{password}</div>
+    
     </div>
   )
 }
