@@ -1,0 +1,71 @@
+/* PokemonList.css */
+
+/* Estilo para o contêiner da lista de pokemons */
+.pokemon-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para o título da lista de pokemons */
+  .pokemon-list h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Estilo para a lista de pokemons */
+  .pokemon-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilo para cada item da lista de pokemons */
+  .pokemon-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordas arredondadas mais suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos */
+  }
+  
+  /* Efeito ao passar o mouse sobre o item */
+  .pokemon-item:hover {
+    transform: scale(1.03); /* Leve aumento do tamanho */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+  }
+  
+  /* Estilo para a imagem do pokemon */
+  .pokemon-item img {
+    width: 60px; /* Aumenta o tamanho da imagem */
+    height: 60px;
+    margin-right: 15px; /* Espaçamento maior ao lado da imagem */
+    transition: transform 0.3s ease; /* Transição suave para efeitos */
+  }
+  
+  /* Efeito ao passar o mouse sobre a imagem */
+  .pokemon-item:hover img {
+    transform: rotate(10deg); /* Leve rotação da imagem */
+  }
+  
+  /* Estilo para o nome do pokemon */
+  .pokemon-item span {
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease; /* Transição suave para efeitos */
+  }
+  
+  /* Efeito ao passar o mouse sobre o nome */
+  .pokemon-item:hover span {
+    color: #007bff; /* Muda a cor do texto ao passar o mouse */
+  }
