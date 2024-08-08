@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('../Fotos/1_Bmmc62zu8xkbH92OyNBxtQ.png') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Estiliza o contêiner do componente */
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Garante que o conteúdo esteja sobre as imagens laterais */
+}
+
+/* Estiliza o título */
+h2 {
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estiliza o campo de input */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Estiliza o botão */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Interações no botão */
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Estiliza a mensagem de erro */
+p.error {
+  color: red;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Estiliza o resultado */
+.result {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 20px;
+}
+
+.result p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Imagens laterais */
+.left-img,
+.right-img {
+  position: fixed;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: painted; /* Para que as imagens não interfiram na interação com o conteúdo */
+}
+
+/* Imagem lateral esquerda */
+.left-img {
+  left: 0;
+  background-image: url('');
+  transform: translateX(-10%);
+  transition: transform 0.3s;
+}
+
+/* Imagem lateral direita */
+.right-img {
+  right: 0;
+  background-image: url('');
+  transform: translateX(10%);
+  transition: transform 0.3s;
+}
+
+/* Movimenta as imagens laterais ao rolar */
+body:hover .left-img,
+body:hover .right-img {
+  transform: translateX(0);
+}
